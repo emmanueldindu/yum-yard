@@ -11,11 +11,12 @@ const Featured = () => {
         Featured
       </Text>
 
-      <View className="flex h-[280px]     mt-1">
+      <View className="flex h-[240px]    mt-1">
         {/* <Text className="font-semibold text-sm ">Featured Resturants</Text> */}
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-          <View className="flex-row gap-5 justify-between">
+          <View className="flex-row  justify-between">
             {restaurants.map((resturant, index) => (
+                
               <View className="flex-row" key={index}>
                 <View className=" h-[230px]   w-[300px] justify-center p-2 mt-4 items-center rounded-xl grid">
                   <View className="w-full justify-between absolute z-[100] h-full flex-row items-center">
