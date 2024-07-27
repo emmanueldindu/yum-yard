@@ -2,6 +2,8 @@ export const getDishById = (id: number) => {
   const meals = restaurant.food.flatMap((category) => category.meals);
   return meals.find((meal) => meal.id === id);
 };
+
+
 export const restaurant = {
   name: 'Vapiano',
   rating: '4.5 Excellent',

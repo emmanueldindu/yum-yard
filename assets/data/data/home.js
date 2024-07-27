@@ -11,6 +11,8 @@ import chicken from '../../data/data/chicken.png'
 import res from '../../data/data/res.jpg'
 import harry from '../../data/data/harry.jpg'
 import pasta from '../../data/data/pasta.jpg'
+
+
 export const categories = [
   {
     text: 'Chicken',
@@ -59,22 +61,7 @@ export const categories = [
     text: 'Cocktail',
     img: cocktail,
   },
-  // {
-  //   text: 'Offers',
-  //   img: require('@/assets/data/c3.png'),
-  // },
-  // {
-  //   text: 'Pickup',
-  //   img: require('@/assets/data/c4.png'),
-  // },
-  // {
-  //   text: 'HOP',
-  //   img: require('@/assets/data/c5.png'),
-  // },
-  // {
-  //   text: 'Pharmacy',
-  //   img: require('@/assets/data/c6.png'),
-  // },
+
 ];
 
 export const restaurants = [
