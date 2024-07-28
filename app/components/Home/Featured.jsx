@@ -1,8 +1,8 @@
 import { View, Text, ScrollView, Image } from "react-native";
 import React from "react";
-import { restaurants } from "../../assets/data/data/home";
-import bg from "../../assets/data/data/Card.png";
-import icon from "../../assets/data/data/icon.png";
+import { restaurants } from "../../../assets/data/data/home";
+import bg from "../../../assets/data/data/Card.png";
+import icon from "../../../assets/data/data/icon.png";
 import { Ionicons } from "@expo/vector-icons";
 const Featured = () => {
   return (
@@ -16,7 +16,6 @@ const Featured = () => {
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
           <View className="flex-row  justify-between">
             {restaurants.map((resturant, index) => (
-                
               <View className="flex-row" key={index}>
                 <View className=" h-[230px]   w-[300px] justify-center p-2 mt-4 items-center rounded-xl grid">
                   <View className="w-full justify-between absolute z-[100] h-full flex-row items-center">

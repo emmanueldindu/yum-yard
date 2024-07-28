@@ -1,6 +1,6 @@
 import { View, Text, ScrollView, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
-import { categories } from "../../assets/data/data/home";
+import { categories } from "../../../assets/data/data/home";
 
 const Categories = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);

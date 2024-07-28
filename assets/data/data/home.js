@@ -1,5 +1,5 @@
-import c1 from '../../data/data/c1.png'
-import c2 from '../../data/data/c2.png'
+import a1 from '../../data/data/1.png'
+import a2 from '../../data/data/2.png'
 import spag from '../../data/data/spaghetti.png'
 import salad from '../../data/data/salad.png'
 import rice from '../../data/data/rice.png'
@@ -67,31 +67,47 @@ export const categories = [
 export const restaurants = [
   {
     name: 'Vapiano',
+    id:1,
     rating: '4.5 Excellent',
     ratings: '(500+)',
     distance: '0.7 miles away',
     img: res,
+    category: ['Chicken', 'Breakfast'],
       tags: ['Italian', 'Pizza', 'Pasta', 'Salads'],
     duration: '35 - 45',
   },
   {
     name: '✨Urban Greens✨',
-    id: '2',
+    id: 2,
     rating: '4.9 Excellent',
     ratings: '(500+)',
     distance: '1.7 miles away',
     img: harry,
+    category: ['Lunch', 'Salad'],
         tags: ['Salads', 'Vegan', 'Healthy', 'British'],
     duration: '15 - 30',
   },
   {
     name: 'El Minero',
-    id: '3',
+    id: 3,
     rating: '4.5 Excellent',
     ratings: '(500+)',
     distance: '3 miles away',
-    img: pasta,
+    category: ['Dinner', 'Breakfast'],
+    img: a1,
         tags: ['Spanish', 'Salads', 'Tpas', 'Pasta'],
     duration: '25 - 45',
   },
+  {
+    name: 'CHinese Tpas',
+    id: 4,
+    rating: '4.5 Excellent',
+    ratings: '(500+)',
+    distance: '3 miles away',
+    category: ['Dinner', 'Breakfast', 'Pizza'],
+    img: a2,
+        tags: ['Spanish', 'Salads', 'Tpas', 'Pasta'],
+    duration: '25 - 45',
+  },
+  
 ];
