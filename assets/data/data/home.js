@@ -74,7 +74,8 @@ export const restaurants = [
     img: res,
     category: ['Chicken', 'Breakfast'],
       tags: ['Italian', 'Pizza', 'Pasta', 'Salads'],
-    duration: '35 - 45',
+    duration: '35',
+    calories: 120
   },
   {
     name: '✨Urban Greens✨',
@@ -85,7 +86,8 @@ export const restaurants = [
     img: harry,
     category: ['Lunch', 'Salad'],
         tags: ['Salads', 'Vegan', 'Healthy', 'British'],
-    duration: '15 - 30',
+    duration: '30',
+    calories: 80
   },
   {
     name: 'El Minero',
@@ -96,7 +98,8 @@ export const restaurants = [
     category: ['Dinner', 'Breakfast'],
     img: a1,
         tags: ['Spanish', 'Salads', 'Tpas', 'Pasta'],
-    duration: '25 - 45',
+    duration: '10',
+    calories: 77
   },
   {
     name: 'CHinese Tpas',
@@ -107,7 +110,8 @@ export const restaurants = [
     category: ['Dinner', 'Breakfast', 'Pizza'],
     img: a2,
         tags: ['Spanish', 'Salads', 'Tpas', 'Pasta'],
-    duration: '25 - 45',
+    duration: '25',
+    calories: 60
   },
   
 ];
