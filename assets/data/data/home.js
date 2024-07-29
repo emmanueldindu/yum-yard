@@ -11,6 +11,19 @@ import chicken from '../../data/data/chicken.png'
 import res from '../../data/data/res.jpg'
 import harry from '../../data/data/harry.jpg'
 import pasta from '../../data/data/pasta.jpg'
+import a3 from '../../data/data/1.jpg'
+import a4 from '../../data/data/2.jpg'
+import a5 from '../../data/data/3.png'
+import a6 from '../../data/data/5.png'
+import a7 from '../../data/data/7.png'
+import a8 from '../../data/data/11.jpg'
+import a9 from '../../data/data/12.jpg'
+import a10 from '../../data/data/13.jpg'
+import a11 from '../../data/data/14.jpg'
+import a12 from '../../data/data/15.jpg'
+import a13 from '../../data/data/16.jpg'
+import a14 from '../../data/data/10.png'
+
 
 
 export const categories = [
@@ -113,5 +126,162 @@ export const restaurants = [
     duration: '25',
     calories: 60
   },
+
+  {
+    name: 'Brocolli fries',
+    id: 5,
+    rating: '4.3 Excellent',
+    ratings: '(500+)',
+    distance: '3 miles away',
+    category: ['Lunch', 'Breakfast', 'Pizza'],
+    img: a3,
+        tags: ['Lunch', 'Salads', 'Tpas', 'Pasta'],
+    duration: '20',
+    calories: 30
+  },
+
+  {
+    name: 'Alfredo pasta',
+    id: 6,
+    rating: '4.3 Excellent',
+    ratings: '(500+)',
+    distance: '4 miles away',
+    category: ['Lunch', 'Breakfast', 'Pizza'],
+    img: a4,
+        tags: ['Lunch', 'Salads', 'Tpas', 'Breakfast', 'Pasta'],
+    duration: '20',
+    calories: 30
+  },
+  {
+    name: 'Alfredo pizza',
+    id: 7,
+    rating: '4.3 Excellent',
+    ratings: '(500+)',
+    distance: '4 miles away',
+    category: ['Lunch', 'Breakfast', 'Pizza'],
+    img: a5,
+        tags: ['Lunch', 'Salads', 'Tpas', 'Breakfast', 'Pasta'],
+    duration: '20',
+    calories: 35
+  },
+
+  {
+    name: 'Dragon Breath',
+    id: 8,
+    rating: '3.7 Excellent',
+    ratings: '(500+)',
+    distance: '4 miles away',
+    category: ['Lunch', 'Breakfast', 'Pizza'],
+    img: a6 ,
+        tags: ['Lunch', 'Salads', 'Tpas', 'Breakfast', 'Pasta'],
+    duration: '20',
+    calories: 67
+  },
+
+
+  {
+    name: 'Stir fry chicken',
+    id: 9,
+    rating: '4.6 Excellent',
+    ratings: '(500+)',
+    distance: '4 miles away',
+    category: ['Dinner',  'Pizza'],
+    img: a7,
+        tags: ['Lunch', 'Salads', 'Tpas', 'Breakfast', 'Pasta'],
+    duration: '45',
+    calories: 30
+  },
+
+  {
+    name: 'BBQ Pulled Pork',
+    id: 10,
+    rating: '4.2 Excellent',
+    ratings: '(500+)',
+    distance: '1 mile away',
+    category: ['Lunch', 'Breakfast', 'Beef'],
+    img: a8,
+        tags: ['Lunch', 'Salads', 'Tpas', 'Breakfast', 'Pasta'],
+    duration: '20',
+    calories: 35
+  },
+
+  {
+    name: 'Chickpea Salad',
+    id: 11,
+    rating: '4.0 Excellent',
+    ratings: '(500+)',
+    distance: '4 miles away',
+    category: ['Lunch', 'Breakfast', 'Chicken'],
+    img: a9,
+        tags: ['Lunch', 'Salads', 'Tpas', 'Breakfast', 'Pasta'],
+    duration: '30',
+    calories: 22
+  },
+
+
+  {
+    name: 'Mushroom Risotto',
+    id: 12,
+    rating: '4.3 Excellent',
+    ratings: '(500+)',
+    distance: '4 miles away',
+    category: ['Dinner', 'Breakfast', 'Pasta'],
+    img: a10,
+        tags: ['Lunch', 'Salads', 'Tpas', 'Breakfast', 'Pasta'],
+    duration: '60',
+    calories: 18
+  },
+
+
+  {
+    name: 'Curry Noodles',
+    id: 13,
+    rating: '4.4 Excellent',
+    ratings: '(500+)',
+    distance: '4 miles away',
+    category: ['Lunch', 'Breakfast', 'Pizza', 'Dinner'],
+    img: a11,
+        tags: ['Lunch', 'Salads', 'Tpas', 'Breakfast', 'Pasta'],
+    duration: '45',
+    calories: 36
+  },
   
+  {
+    name: 'Shrimp Pasta',
+    id: 14,
+    rating: '4.3 Excellent',
+    ratings: '(500+)',
+    distance: '5 miles away',
+    category: ['Lunch', 'Breakfast', 'Pasta'],
+    img: a12,
+        tags: ['Lunch', 'Salads', 'Tpas', 'Breakfast', 'Pasta'],
+    duration: '50',
+    calories: 67
+  },
+
+  {
+    name: ' Vegetable Platter',
+    id: 15,
+    rating: '4.3 Excellent',
+    ratings: '(500+)',
+    distance: '3 miles away',
+    category: ['Lunch', 'Breakfast', 'Pizza'],
+    img: a13,
+        tags: ['Lunch', 'Salads', 'Tpas', 'Breakfast', 'Pasta'],
+    duration: '60',
+    calories: 35
+  },
+
+  {
+    name: 'Blackened Shrimp',
+    id: 7,
+    rating: '4.5 Excellent',
+    ratings: '(500+)',
+    distance: '4 miles away',
+    category: ['Lunch', 'Breakfast', 'Pizza'],
+    img: a14,
+        tags: ['Lunch', 'Salads', 'Tpas', 'Breakfast', 'Pasta'],
+    duration: '20',
+    calories: 35
+  },
 ];
