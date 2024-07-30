@@ -4,13 +4,19 @@ import React from "react";
 import { restaurants } from "../../../assets/data/data/home";
 import StaggeredList from "@mindinventory/react-native-stagger-view";
 import { Ionicons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
+
+
 
 export default function Meals() {
+
+  const navigation = useNavigation()
   const renderChildren = (item) => {
     return (
       <TouchableOpacity
         className="rounded-3xl gap-1  mb-12"
         style={getChildrenStyle()}
+        onPress={() => navigation.navigate('Details', {item})}
         key={item.id}
       >
         <View>
@@ -22,12 +28,7 @@ export default function Meals() {
           />
           <View className="w-full flex absolute z-[100]">
             <TouchableOpacity className="absolute z-[100] mt-3  mx-[120px] rounded-lg items-center p-1 flex-row justify-center w-[35px]   h-8  bg-white  ">
-              {/* <Ionicons
-                      name="star"
-                      color={"gold"}
-                      className="items-center "
-                    /> */}
-
+   
               <Ionicons
                 name="heart-outline"
                 className="items-center"
