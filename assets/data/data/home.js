@@ -81,7 +81,7 @@ export const restaurants = [
   {
     name: 'Vapiano',
     id:1,
-    rating: '4.5 Excellent',
+    rating: '4.5 ',
     ratings: '(500+)',
     distance: '0.7 miles away',
     img: res,
@@ -94,7 +94,7 @@ export const restaurants = [
   {
     name: '✨Urban Greens✨',
     id: 2,
-    rating: '4.9 Excellent',
+    rating: '4.9 ',
     ratings: '(500+)',
     distance: '1.7 miles away',
     img: harry,
@@ -108,7 +108,7 @@ export const restaurants = [
   {
     name: 'El Minero',
     id: 3,
-    rating: '4.5 Excellent',
+    rating: '4.5 ',
     ratings: '(500+)',
     distance: '3 miles away',
     category: ['Dinner', 'Breakfast'],
@@ -121,7 +121,7 @@ export const restaurants = [
   {
     name: 'CHinese Tpas',
     id: 4,
-    rating: '4.5 Excellent',
+    rating: '4.5 ',
     ratings: '(500+)',
     distance: '3 miles away',
     category: ['Dinner', 'Breakfast', 'Pizza'],
@@ -136,7 +136,7 @@ export const restaurants = [
   {
     name: 'Brocolli fries',
     id: 5,
-    rating: '4.3 Excellent',
+    rating: '4.3 ',
     ratings: '(500+)',
     distance: '3 miles away',
     category: ['Lunch', 'Breakfast', 'Pizza'],
@@ -151,7 +151,7 @@ export const restaurants = [
   {
     name: 'Alfredo pasta',
     id: 6,
-    rating: '4.3 Excellent',
+    rating: '4.3 ',
     ratings: '(500+)',
     distance: '4 miles away',
     category: ['Lunch', 'Breakfast', 'Pizza'],
@@ -165,7 +165,7 @@ export const restaurants = [
   {
     name: 'Alfredo pizza',
     id: 7,
-    rating: '4.3 Excellent',
+    rating: '4.3 ',
     ratings: '(500+)',
     distance: '4 miles away',
     category: ['Lunch', 'Breakfast', 'Pizza'],
@@ -180,7 +180,7 @@ export const restaurants = [
   {
     name: 'Dragon Breath',
     id: 8,
-    rating: '3.7 Excellent',
+    rating: '3.7 ',
     ratings: '(500+)',
     distance: '4 miles away',
     category: ['Lunch', 'Breakfast', 'Pizza'],
@@ -196,7 +196,7 @@ export const restaurants = [
   {
     name: 'Stir fry chicken',
     id: 9,
-    rating: '4.6 Excellent',
+    rating: '4.6 ',
     ratings: '(500+)',
     distance: '4 miles away',
     category: ['Dinner',  'Pizza'],
@@ -211,7 +211,7 @@ export const restaurants = [
   {
     name: 'BBQ Pulled Pork',
     id: 10,
-    rating: '4.2 Excellent',
+    rating: '4.2 ',
     ratings: '(500+)',
     distance: '1 mile away',
     category: ['Lunch', 'Breakfast', 'Beef'],
@@ -226,7 +226,7 @@ export const restaurants = [
   {
     name: 'Chickpea Salad',
     id: 11,
-    rating: '4.0 Excellent',
+    rating: '4.0 ',
     ratings: '(500+)',
     distance: '4 miles away',
     category: ['Lunch', 'Breakfast', 'Chicken'],
@@ -241,7 +241,7 @@ export const restaurants = [
   {
     name: 'Mushroom Risotto',
     id: 12,
-    rating: '4.3 Excellent',
+    rating: '4.3 ',
     ratings: '(500+)',
     distance: '4 miles away',
     category: ['Dinner', 'Breakfast', 'Pasta'],
@@ -257,7 +257,7 @@ export const restaurants = [
   {
     name: 'Curry Noodles',
     id: 13,
-    rating: '4.4 Excellent',
+    rating: '4.4 ',
     ratings: '(500+)',
     distance: '4 miles away',
     category: ['Lunch', 'Breakfast', 'Pizza', 'Dinner'],
@@ -272,7 +272,7 @@ export const restaurants = [
   {
     name: 'Shrimp Pasta',
     id: 14,
-    rating: '4.3 Excellent',
+    rating: '4.3 ',
     ratings: '(500+)',
     distance: '5 miles away',
     category: ['Lunch', 'Breakfast', 'Pasta'],
@@ -287,7 +287,7 @@ export const restaurants = [
   {
     name: ' Vegetable Platter',
     id: 15,
-    rating: '4.3 Excellent',
+    rating: '4.3 ',
     ratings: '(500+)',
     distance: '3 miles away',
     category: ['Lunch', 'Breakfast', 'Pizza'],
@@ -301,7 +301,7 @@ export const restaurants = [
   {
     name: 'Blackened Shrimp',
     id: 16,
-    rating: '4.5 Excellent',
+    rating: '4.5 ',
     ratings: '(500+)',
     distance: '4 miles away',
     category: ['Lunch', 'Breakfast', 'Pizza'],

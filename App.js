@@ -7,12 +7,12 @@ import Notification from "./app/tabs/Notification";
 import Search from "./app/tabs/Search";
 import Profile from "./app/tabs/Profile";
 import Details from "./app/screens/Details";
-import { GestureHandlerRootView } from "react-native-gesture-handler";
+
 
 const Stack = createNativeStackNavigator();
 export default function App() {
   return (
-    <GestureHandlerRootView>
+
     
       <NavigationContainer>
         <Stack.Navigator>
@@ -47,7 +47,7 @@ export default function App() {
           ></Stack.Screen>
         </Stack.Navigator>
       </NavigationContainer>
-    </GestureHandlerRootView>
+
   );
 }
 
