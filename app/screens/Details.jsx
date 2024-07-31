@@ -3,11 +3,25 @@ import React, { useLayoutEffect } from "react";
 import ParallaxScrollView from "../components/ParallaxScrollView";
 import img from "../../assets/data/data/11.jpg";
 import { useNavigation } from "@react-navigation/native";
+import Toast from 'react-native-toast-message';
+import useCartStore from "../Store/CartStore";
 import { Ionicons } from "@expo/vector-icons";
 const Details = ({ route }) => {
   const { item } = route.params;
 
   const navigation = useNavigation();
+  const totalCount = useCartStore((state) => state.totalCount);
+  const addItem = useCartStore((state) => state.addItem);
+
+  const handleAddToCart = () => {
+    addItem(item);
+    Toast.show({
+      type: 'success',
+      text1: 'Item Added to Cart',
+      text2: `${item.name} has been added to your cart.`,
+      visibilityTime: 3000, 
+    });
+  };
 
   useLayoutEffect(() => {
     navigation.setOptions({
@@ -48,19 +62,22 @@ const Details = ({ route }) => {
             className="w-full h-full"
           />
         )}
-        // renderForeground={() => (
-        //  <View style={{ height: 300, flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        //     <Text>''</Text>
-        //   </View>
-        // )}
+      
       >
         <View
           className="mt-[-20px] bg-white rounded-t-3xl grid  w-full p-5 "
           style={{ height: 500 }}
         >
+          <View className='flex-row justify-between p-2 '>
           <Text className="text-2xl mt-3 font-semibold text-[#0A2533]">
             {item.name}
           </Text>
+
+          <Text className="text-xl mt-3 font-semibold text-[#0A2533]">
+           $ {item.price}
+          </Text>
+          </View>
+  
           <Text className="mt-4 leading-12 text-sm text-[#748189]">
             {item.description}
           </Text>
@@ -105,7 +122,13 @@ const Details = ({ route }) => {
                 {item.distance}{" "}
               </Text>
             </View>
+
+           
           </View>
+          <View className='grid mt-4 w-full'>
+              <Text className='text-black text-xl font-semibold'>Ingredients</Text>
+              <Text className='mt-4 leading-12 text-sm text-[#748189]'>{item.ingrideints}</Text>
+            </View>
         </View>
       </ParallaxScrollView>
       <View style={styles.footer} className='flex-row px-8'>
@@ -116,12 +139,16 @@ const Details = ({ route }) => {
             // className='justify-center my-auto'
             size={19}
           />
-          <View style={styles.badgeContainer}>
-            <Text style={styles.badgeText}>2</Text>
-          </View>
+           {totalCount > 0 && (
+        <View style={styles.badgeContainer}>
+          <Text style={styles.badgeText}>{totalCount}</Text>
+        </View>
+      )}
         </TouchableOpacity>
 
-        <TouchableOpacity className='h-[70px]  w-[180px] items-center text-center rounded-3xl bg-[#0A2533]'>
+        <TouchableOpacity
+         onPress={handleAddToCart}
+         className='h-[70px]  w-[180px] items-center text-center rounded-3xl bg-[#0A2533]'>
           <Text className='text-white my-auto text-xl'>Add To Cart</Text>
         </TouchableOpacity>
       </View>

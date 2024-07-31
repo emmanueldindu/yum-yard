@@ -7,6 +7,7 @@ import Notification from "./app/tabs/Notification";
 import Search from "./app/tabs/Search";
 import Profile from "./app/tabs/Profile";
 import Details from "./app/screens/Details";
+import Toast from 'react-native-toast-message';
 
 
 const Stack = createNativeStackNavigator();
@@ -46,6 +47,7 @@ export default function App() {
             options={{ headerShown: true }}
           ></Stack.Screen>
         </Stack.Navigator>
+        <Toast  />
       </NavigationContainer>
 
   );
