@@ -40,7 +40,8 @@
     "react-native-waterfall-list": "^1.0.4",
     "reanimated-bottom-sheet": "^1.0.0-alpha.22",
     "tailwind-rn": "^4.2.0",
-    "typescript": "~5.3.3"
+    "typescript": "~5.3.3",
+    "zustand": "^4.5.4"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

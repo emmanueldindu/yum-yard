@@ -88,6 +88,8 @@ export const restaurants = [
     category: ['Chicken', 'Breakfast'],
       tags: ['Italian', 'Pizza', 'Pasta', 'Salads'],
     duration: '35',
+    price: 14,
+    ingrideints: 'Fresh garlic cloves, minced or chopped, essential for flavoring many recipes.', 
     calories: 120,
     description: 'A delightful blend of savory and sweet flavors, combining a crispy outer layer with a tender, juicy center, served with a tangy dipping sauce.'
   },
@@ -101,7 +103,10 @@ export const restaurants = [
     category: ['Lunch', 'Salad'],
         tags: ['Salads', 'Vegan', 'Healthy', 'British'],
     duration: '30',
+    price: 16.5,
+    ingrideints: 'Boneless, skinless chicken breast, often used in stir-fries, salads, or grilled dishes.',
     calories: 80,
+
     description: 'A creamy, rich dish featuring a harmonious mix of spices and herbs, enveloping a tender protein, accompanied by a side of aromatic rice.',
 
   },
@@ -116,6 +121,8 @@ export const restaurants = [
         tags: ['Spanish', 'Salads', 'Tpas', 'Pasta'],
     duration: '10',
     calories: 77,
+    price: 13,
+    ingrideints: 'Ripe Roma tomatoes, known for their firm texture and low moisture, ideal for sauces and salads.',
     description: 'A refreshing, light creation made with fresh, seasonal vegetables, drizzled with a zesty vinaigrette, and topped with crunchy nuts for texture.',
   },
   {
@@ -128,6 +135,8 @@ export const restaurants = [
     img: a2,
         tags: ['Spanish', 'Salads', 'Tpas', 'Pasta'],
     duration: '25',
+    price: 14.3,
+    ingrideints: 'Sweet red bell peppers, diced or sliced, great for adding color and sweetness to dishes.',
     calories: 60,
     description: 'A hearty, comforting bowl of slow-cooked goodness, filled with tender chunks of meat, root vegetables, and a robust, flavorful broth.',
 
@@ -144,6 +153,8 @@ export const restaurants = [
         tags: ['Lunch', 'Salads', 'Tpas', 'Pasta'],
     duration: '20',
     calories: 30,
+    price: 20,
+    ingrideints: 'Fresh spinach leaves, which can be used in salads, sautéed as a side, or added to soups and smoothies.',
     description: 'A decadent, melt-in-your-mouth dessert with layers of velvety cream, luscious fruit compote, and a buttery, crumbly base.',
 
   },
@@ -159,6 +170,8 @@ export const restaurants = [
         tags: ['Lunch', 'Salads', 'Tpas', 'Breakfast', 'Pasta'],
     duration: '20',
     calories: 30,
+    price: 9.8,
+    ingrideints: 'A nutrient-rich grain, cooked and used as a base for salads or served as a side dish.',
     description: 'A vibrant, colorful plate of roasted vegetables, tossed in a fragrant herb oil, and finished with a sprinkle of sea salt and a squeeze of lemon.',
 
   },
@@ -173,6 +186,8 @@ export const restaurants = [
         tags: ['Lunch', 'Salads', 'Tpas', 'Breakfast', 'Pasta'],
     duration: '20',
     calories: 35,
+    price: 25,
+    ingrideints: 'Canned or cooked black beans, used in salads, soups, or as a protein source in vegetarian dishes.',
     description: 'A savory, golden-brown pastry filled with a rich, creamy mixture of cheese and herbs, perfect for a light snack or appetizer.',
 
   },
@@ -187,6 +202,8 @@ export const restaurants = [
     img: a6 ,
         tags: ['Lunch', 'Salads', 'Tpas', 'Breakfast', 'Pasta'],
     duration: '20',
+    price: 21.4,
+    ingrideints: ' Extra virgin olive oil, used for cooking, sautéing, or as a dressing for salads.',
     calories: 67,
     description: 'A spicy, aromatic dish featuring tender pieces of meat simmered in a complex sauce made with a medley of exotic spices and fresh herbs.',
 
@@ -204,6 +221,8 @@ export const restaurants = [
         tags: ['Lunch', 'Salads', 'Tpas', 'Breakfast', 'Pasta'],
     duration: '45',
     calories: 30,
+    price: 23,
+    ingrideints: 'Sliced or diced red onion, known for its mild flavor and vibrant color, used in salads, salsas, or as a topping.',
     description: 'A refreshing, chilled soup made with ripe, juicy tomatoes, crisp cucumbers, and a hint of garlic, garnished with fresh herbs and a drizzle of olive oil.',
 
   },
@@ -219,6 +238,8 @@ export const restaurants = [
         tags: ['Lunch', 'Salads', 'Tpas', 'Breakfast', 'Pasta'],
     duration: '20',
     calories: 35,
+    price: 12,
+    ingrideints: 'Ripe avocado, used in salads, as a topping, or made into guacamole.',
     description: 'A luxurious, indulgent treat made with layers of silky chocolate mousse, crunchy cookie crumbles, and a hint of espresso.',
 
   },
@@ -234,6 +255,8 @@ export const restaurants = [
         tags: ['Lunch', 'Salads', 'Tpas', 'Breakfast', 'Pasta'],
     duration: '30',
     calories: 22,
+    price: 15,
+    ingrideints: ' Sharp or mild cheddar cheese, shredded or sliced, used in sandwiches, burgers, or as a topping.',
     description: 'A flavorful, protein-packed salad with a mix of fresh greens, roasted vegetables, and a tangy citrus dressing, topped with crunchy seeds.',
   },
 
@@ -248,7 +271,9 @@ export const restaurants = [
     img: a10,
         tags: ['Lunch', 'Salads', 'Tpas', 'Breakfast', 'Pasta'],
     duration: '60',
-    calories: 18,
+    calories: 48,
+    price: 18,
+    ingrideints: 'Fresh cilantro leaves, chopped, used to add a fresh, herbaceous flavor to dishes like salsas or curries.',
     description: 'A hearty, filling sandwich piled high with layers of thinly sliced meat, fresh vegetables, and a tangy sauce, all nestled between two slices of crusty bread.',
 
   },
@@ -265,6 +290,8 @@ export const restaurants = [
         tags: ['Lunch', 'Salads', 'Tpas', 'Breakfast', 'Pasta'],
     duration: '45',
     calories: 36,
+    price: 17,
+    ingrideints: 'Freshly squeezed lemon juice, used for flavoring, marinating, or adding acidity to dishes.',
     description: 'A rich, velvety soup made with earthy mushrooms, a splash of cream, and a hint of sherry, served with a slice of warm, crusty bread.',
 
   },
@@ -280,6 +307,8 @@ export const restaurants = [
         tags: ['Lunch', 'Salads', 'Tpas', 'Breakfast', 'Pasta'],
     duration: '50',
     calories: 67,
+    price: 14,
+    ingrideints: 'Ground cumin, a spice with a warm, earthy flavor, used in many spice blends and dishes like chili or curry.',
     description: 'A light, fluffy pastry filled with a sweet, tangy fruit filling, dusted with powdered sugar and served warm from the oven.',
 
   },
@@ -294,6 +323,8 @@ export const restaurants = [
     img: a13,
         tags: ['Lunch', 'Salads', 'Tpas', 'Breakfast', 'Pasta'],
     duration: '60',
+    price: 33,
+    ingrideints: 'Plain Greek yogurt, which can be used as a base for sauces, dressings, or as a substitute for sour cream.',
     calories: 35,
     description: 'A spicy, flavorful stir-fry made with tender pieces of meat, crisp vegetables, and a savory sauce, served over a bed of fluffy rice.'
   },
@@ -308,6 +339,8 @@ export const restaurants = [
     img: a14,
         tags: ['Lunch', 'Salads', 'Tpas', 'Breakfast', 'Pasta'],
     duration: '20',
+    price: 16,
+    ingrideints: 'Your choice of pasta (like penne, spaghetti, or fusilli), cooked as a base for sauces or in pasta salads.',
     calories: 35,
     description: 'Succulent shrimp cooked in spicy tomato sauce, served in a crispy taco shell.',
   },
