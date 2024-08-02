@@ -132,7 +132,7 @@ const Details = ({ route }) => {
         </View>
       </ParallaxScrollView>
       <View style={styles.footer} className='flex-row px-8'>
-        <TouchableOpacity className="h-14 w-14   rounded-full justify-center  items-center bg-black">
+        <TouchableOpacity onPress={() => navigation.navigate('Cart')} className="h-14 w-14   rounded-full justify-center  items-center bg-black">
           <Ionicons
             name="bag-outline"
             color={'white'}
@@ -140,9 +140,9 @@ const Details = ({ route }) => {
             size={19}
           />
            {totalCount > 0 && (
-        <View style={styles.badgeContainer}>
+        <TouchableOpacity  style={styles.badgeContainer}>
           <Text style={styles.badgeText}>{totalCount}</Text>
-        </View>
+        </TouchableOpacity>
       )}
         </TouchableOpacity>
 
