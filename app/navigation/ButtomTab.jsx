@@ -86,7 +86,7 @@ const ButtonTab = () => {
         component={Notification}
         options={{
           tabBarIcon: ({ focused }) => (
-            <Ionicons name="notifications-outline" size={24} color={focused ? "#70B9BE" : "#828282"} />
+            <Ionicons name="heart-outline" size={24} color={focused ? "#70B9BE" : "#828282"} />
           ),
         }}
       />
