@@ -5,24 +5,48 @@ import img from "../../assets/data/data/11.jpg";
 import { useNavigation } from "@react-navigation/native";
 import Toast from 'react-native-toast-message';
 import useCartStore from "../Store/CartStore";
+import favStore from "../Store/FavouriteStore";
 import { Ionicons } from "@expo/vector-icons";
 const Details = ({ route }) => {
   const { item } = route.params;
 
   const navigation = useNavigation();
   const totalCount = useCartStore((state) => state.totalCount);
+  const {addFavourites, removeFavourites, favourites} = favStore() 
   const addItem = useCartStore((state) => state.addItem);
+
+  const isFavourite = favourites.includes(item)
 
   const handleAddToCart = () => {
     addItem(item);
     Toast.show({
       type: 'success',
-      text1: 'Item Added to Cart',
+      text1: 'Item Added To Cart',
       text2: `${item.name} has been added to your cart.`,
       visibilityTime: 3000, 
     });
   };
 
+  const handleFavorites = () => {
+    if (isFavourite) {
+      removeFavourites(item)
+      console.log(`${item.name} removed from favourite`)
+      Toast.show({
+        type: "error",
+        text1: 'Item Removed From Favorites',
+        text2: `${item.name} has been removed from your favourite list.`
+      })
+     
+    } else {
+      addFavourites(item)
+      console.log(`${item.name} added to favourite`)
+      Toast.show({
+        type: 'success',
+        text1: 'Item Added To Favorites',
+        text2: `${item.name} has been added to your favourite list.`
+      })
+    }
+  }
   useLayoutEffect(() => {
     navigation.setOptions({
       headerTransparent: true,
@@ -32,12 +56,17 @@ const Details = ({ route }) => {
           className="w-[40px] h-[40px] bg-white items-center rounded-2xl  justify-center "
           onPress={() => navigation.goBack()}
         >
-          <Ionicons name="close-outline" size={22} />
+          <Ionicons name="close-outline" 
+          
+          size={22} />
         </TouchableOpacity>
       ),
       headerRight: () => (
-        <TouchableOpacity className="w-[40px] h-[40px] bg-white items-center rounded-2xl justify-center ">
-          <Ionicons name="heart-outline" size={22} />
+        <TouchableOpacity 
+        className="w-[40px] h-[40px] bg-white items-center rounded-2xl justify-center "
+        onPress={handleFavorites}
+        >
+          <Ionicons name={isFavourite ? "heart" : "heart-outline"} color={'#000'} size={22} />
         </TouchableOpacity>
       ),
     });

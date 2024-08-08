@@ -5,13 +5,41 @@ import { restaurants } from "../../../assets/data/data/home";
 import StaggeredList from "@mindinventory/react-native-stagger-view";
 import { Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
+import favStore from "../../Store/FavouriteStore";
+import Toast from "react-native-toast-message";
+
 
 
 
 export default function Meals() {
 
+
+  
+
   const navigation = useNavigation()
   const renderChildren = (item) => {
+    const {addFavourites, removeFavourites, favourites} = favStore() 
+  const isFavourite = favourites.includes(item)
+  const handleFavorites = () => {
+    if (isFavourite) {
+      removeFavourites(item)
+      console.log(`${item.name} removed from favourite`)
+      Toast.show({
+        type: "error",
+        text1: 'Item Removed From Favorites',
+        text2: `${item.name} has been removed from your favourite list.`
+      })
+     
+    } else {
+      addFavourites(item)
+      console.log(`${item.name} added to favourite`)
+      Toast.show({
+        type: 'success',
+        text1: 'Item Added To Favorites',
+        text2: `${item.name} has been added to your favourite list.`
+      })
+    }
+  }
     return (
       <TouchableOpacity
         className="rounded-3xl gap-1  mb-12"
@@ -27,13 +55,15 @@ export default function Meals() {
             resizeMode={"cover"}
           />
           <View className="w-full flex absolute z-[100]">
-            <TouchableOpacity className="absolute z-[100] mt-3  mx-[120px] rounded-lg items-center p-1 flex-row justify-center w-[35px]   h-8  bg-white  ">
+            <TouchableOpacity 
+             onPress={handleFavorites}
+            className="absolute z-[100] mt-3  mx-[120px] rounded-lg items-center p-1 flex-row justify-center w-[35px]   h-8  bg-white  ">
    
               <Ionicons
-                name="heart-outline"
+               name={isFavourite ? "heart" : "heart-outline"}
                 className="items-center"
                 size={20}
-                color={"black"}
+                color={isFavourite ? '#70B9BE' : 'black'}
               />
             </TouchableOpacity>
           </View>
