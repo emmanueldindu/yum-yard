@@ -21,6 +21,7 @@ const Favourites = () => {
   return (
     <SafeAreaView className="flex-1">
       <ScrollView>
+        <Text className='mt-4 text-center text-[20px] font-bold  text-[#0A2533] '>Favourites</Text>
         <View className=" items-center  flex-wrap  justify-between p-1 gap-y-3 mt-12  flex-row w-[100%] ">
           {favourites.length > 0 ? (
             favourites.map((item, index) => (
@@ -35,7 +36,7 @@ const Favourites = () => {
                 />
                
                 <View className="p-2">
-                  <Text className="p-1 font-semibold">{item.name}</Text>
+                  <Text className="p-1 font-semibold text-[#0A2533]">{item.name}</Text>
                   <View className="flex-row justify-between">
                     <View className="flex-row p-1 gap-1">
                       <Ionicons
@@ -60,7 +61,7 @@ const Favourites = () => {
               </TouchableOpacity>
             ))
           ) : (
-            <Text>No favourites yet</Text>
+            <Text className='text-center mx-2 '>No favourites yet</Text>
           )}
           {/* <Text className='text-3xl'>jdjd</Text> */}
         </View>

@@ -91,7 +91,6 @@ export default function Meals() {
   const getChildrenStyle = () => {
     return {
       height: Number(Math.random() * 20 + 12) * 10,
-      // backgroundColor: "white",
       margin: 4,
       borderRadius: 18,
       padding: 12,
