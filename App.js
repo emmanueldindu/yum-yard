@@ -10,9 +10,10 @@ import Toast from "react-native-toast-message";
 import { Ionicons } from "@expo/vector-icons";
 import Cart from "./app/screens/Cart";
 import Favourites from "./app/tabs/Favourites";
+import { LogBox } from 'react-native';
 
 const Stack = createNativeStackNavigator();
-
+LogBox.ignoreAllLogs();
 export default function App() {
   return (
     <NavigationContainer>
