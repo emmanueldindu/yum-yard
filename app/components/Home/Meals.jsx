@@ -13,12 +13,9 @@ import Toast from "react-native-toast-message";
 
 export default function Meals() {
 
-
-  
-
   const navigation = useNavigation()
   const renderChildren = (item) => {
-    const {addFavourites, removeFavourites, favourites} = favStore() 
+  const {addFavourites, removeFavourites, favourites} = favStore() 
   const isFavourite = favourites.includes(item)
   const handleFavorites = () => {
     if (isFavourite) {
