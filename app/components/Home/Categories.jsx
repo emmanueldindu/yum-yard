@@ -8,6 +8,7 @@ const Categories = () => {
     <View className="p-1 mt-2 grid">
       <Text className="text-[18px]  text-[#0A2533] font-semibold ">
         Category
+        {/* ffd */}
       </Text>
       <View className="flex h-[80px]     mt-1">
         <ScrollView
